@@ -33,7 +33,7 @@ const Tim = () => {
   // countDown
   let interval = useRef();
   const updateCountdown = () => {
-    const targetDate = new Date("Nov 12, 2023 00:00:00").getTime();
+    const targetDate = new Date("Nov 12, 2023 16:00:00").getTime();
     interval = setInterval(() => {
       const now = new Date().getTime();
       const timeDifference = targetDate - now;
@@ -217,7 +217,7 @@ const Tim = () => {
               }}
             >
               {" "}
-              12/11/2023 16:00 hs a 20:00 hs{" "}
+              12 de Noviembre / 16:00 hs a 20:00 hs{" "}
             </p>
             <h4 style={{ fontSize: "20px", marginBottom: "10px" }}>
               Ubicación
