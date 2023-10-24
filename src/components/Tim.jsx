@@ -169,7 +169,7 @@ const Tim = () => {
             </h4>
 
             <p style={{ fontSize: "20px", textAlign: "justify" }}>
-              Soy Agustín y quiero contarte un poco sobre mi. Soy un niño muy
+              Hola, soy Agustín y quiero contarte un poco sobre mi. Soy un niño muy
               risueño y me encantan los autos, también disfruto mucho bailar,
               los juegos imaginativos y jugar al chef en mi cocinita. He
               disfrutado cada día de estos dos años aprendiendo muy rápido
