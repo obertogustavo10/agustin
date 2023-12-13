@@ -325,7 +325,7 @@ const Tim = () => {
               IMPORTANTE
             </h4>
             <p style={{ fontSize: "20px", marginBottom: "20px" }}>
-              Confirmar asitencia{" "}
+              Confirmar asistencia{" "}
             </p>
             <Form onSubmit={handleSubmit}>
               <div
