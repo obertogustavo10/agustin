@@ -35,7 +35,7 @@ const router = createBrowserRouter([
     element: <Tim />,
   },
   {
-    path: "https://jesus-cumplea-os.vercel.app/invitados",
+    path: "/invitados",
     element: <Market />,
   },
 ]);
