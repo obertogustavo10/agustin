@@ -34,6 +34,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Tim />,
   },
+  {
+    path: "/invitados",
+    element: <Market />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

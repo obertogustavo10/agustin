@@ -15,9 +15,7 @@ export default function CardProducts({ row, id, setCurrentID }) {
       });
     }
   };
-
-  return (
-    <Card style={{ marginBottom: "1.5rem" }}>
+/*     <Card style={{ marginBottom: "1.5rem" }}>
       {row.image ? (
         <Card.Img className="img-fluid" variant="top" src={row.image} />
       ) : (
@@ -43,6 +41,37 @@ export default function CardProducts({ row, id, setCurrentID }) {
         </div>
         <Card.Text>{row.description}</Card.Text>
         <Card.Title>{row.price}</Card.Title>
+      </Card.Body>
+    </Card> */
+  return (
+    <Card style={{ marginBottom: "1.5rem" }}>
+      {row.image ? (
+        <Card.Img className="img-fluid" variant="top" src={row.image} />
+      ) : (
+        false
+      )}
+      <Card.Body>
+        <div className="d-flex justify-content-between">
+          <Card.Title>{row.name}</Card.Title>
+          <div>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.stopPropagation();
+                deleteProduct(id);
+              }}
+            >
+              <AiFillDelete />
+            </a>
+            <a href="#" onClick={() => setCurrentID(id)}>
+              <AiOutlineEdit />
+            </a>
+          </div>
+        </div>
+        <Card.Text>{row.nombre}</Card.Text>
+        <Card.Title>{row.confirmo ? 'confirma' : 'false'}</Card.Title>
+        <Card.Title>{row.noConfirmo? 'No va' : 'false'}</Card.Title>
+        <Card.Title>{row.mensaje}</Card.Title>
       </Card.Body>
     </Card>
   );

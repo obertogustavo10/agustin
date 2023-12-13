@@ -5,9 +5,11 @@ import Granaderos from "../assets/granaderos.jpg";
 import { toast } from "react-toastify";
 import { ToastContainer } from "react-toastify";
 import { addProduct } from "../firebase/api";
-import Tim4 from "../assets/tim11.jpeg";
-import Tim1 from "../assets/tim10.jpg";
-import Tim2 from "../assets/tim9.jpg";
+import Tim4 from "../assets/katy2.jpg";
+import Tim1 from "../assets/katy3.jpg";
+import Tim2 from "../assets/katy4.jpg";
+import Tim3 from "../assets/katy5.jpg";
+import Tim5 from "../assets/katy6.jpg";
 import { Howl, Howler } from "howler";
 import { AiOutlinePauseCircle, AiOutlinePlayCircle } from "react-icons/ai";
 const Tim = () => {
@@ -33,7 +35,7 @@ const Tim = () => {
   // countDown
   let interval = useRef();
   const updateCountdown = () => {
-    const targetDate = new Date("Nov 12, 2023 16:00:00").getTime();
+    const targetDate = new Date("Dec 19, 2023 15:00:00").getTime();
     interval = setInterval(() => {
       const now = new Date().getTime();
       const timeDifference = targetDate - now;
@@ -99,12 +101,13 @@ const Tim = () => {
     } else {
       state.confirmo = checked;
       state.noConfirmo = checked1;
-      const collectionName = "cumpleTim";
+      const collectionName = "cumpleJesus";
       await addProduct(state, collectionName);
       toast("Confirmación enviada", {
         type: "success",
         autoClose: 2000,
       });
+      setState(initialState)
     }
   };
 
@@ -169,13 +172,13 @@ const Tim = () => {
             </h4>
 
             <p style={{ fontSize: "20px", textAlign: "justify" }}>
-              Hola, soy Agustín y quiero contarte un poco sobre mi. Soy un niño muy
-              risueño y me encantan los autos, también disfruto mucho bailar,
-              los juegos imaginativos y jugar al chef en mi cocinita. He
-              disfrutado cada día de estos dos años aprendiendo muy rápido
+              Hola, soy Jesus Adrian y quiero contarte un poco sobre mi. Soy un niño muy
+              risueño y me encantan muchisimo jugar, también disfruto mucho bailar,
+              los juegos imaginativos. He
+              disfrutado cada día de estos 4 años aprendiendo muy rápido
               habilidades y nuevos juegos, siempre rodeado de mucho amor y de la
               compañía maravillosa de mi papi y mami. Soy un niño muy feliz y
-              afortunado y por eso quiero celebrar contigo mis 2 añitos.
+              afortunado y por eso quiero celebrar contigo mis 4 añitos.
             </p>
             <h4>
               No olvides traer tu sonrisa y tu espíritu festivo. ¡Esperamos
@@ -194,11 +197,17 @@ const Tim = () => {
         <Carousel.Item interval={1000}>
           <img className="d-block w-100" src={Tim2} alt="Third slide" />
         </Carousel.Item>
+        <Carousel.Item interval={1000}>
+          <img className="d-block w-100" src={Tim3} alt="Third slide" />
+        </Carousel.Item>
+        <Carousel.Item interval={1000}>
+          <img className="d-block w-100" src={Tim5} alt="Third slide" />
+        </Carousel.Item>
       </Carousel>
       <Container style={{ padding: "30px", background: "#CBFBFA" }}>
         <Row style={{ padding: "30px", background: "#fff" }}>
           <Col xs={12} md={12} lg={12} style={{ textAlign: "center" }}>
-            <img className="d-block w-100" src={Granaderos} alt="First slide" />
+           
             <h4
               style={{
                 fontSize: "20px",
@@ -217,7 +226,7 @@ const Tim = () => {
               }}
             >
               {" "}
-              12 de Noviembre / 16:00 hs a 20:00 hs{" "}
+              19 de Diciembre/ 3:00 pm
             </p>
             <h4 style={{ fontSize: "20px", marginBottom: "10px" }}>
               Ubicación
@@ -230,15 +239,8 @@ const Tim = () => {
                 borderRadius: "10px",
               }}
             >
-              Granaderos 725, Buenos Aires
+              Bohio
             </p>
-            <a
-              href="https://maps.app.goo.gl/B72YnyJqPj6JtZjh9"
-              target="_blank"
-              className="button"
-            >
-              Ver Ubicación
-            </a>
           </Col>
         </Row>
       </Container>
